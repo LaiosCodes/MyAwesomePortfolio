@@ -36,7 +36,7 @@
             <div class="d-flex justify-content-between align-items-center mb-3 border-bottom">
                 <ul class="nav nav-tabs m-0 p-0">   
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page">portfolio.html <i class="fa-solid fa-close"></i></a>
+                        <a class="nav-link active" aria-current="page">{{ $pageTitle ?? 'portfolio' }}.html<i class="fa-solid fa-close"></i></a>
                     </li>
                 </ul>
                 <a id="themeIcon" onclick="setTheme()"><i class="fa-solid fa-sun"></i></a>
