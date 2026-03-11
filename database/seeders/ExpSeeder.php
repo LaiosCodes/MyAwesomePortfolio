@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\Artisan;
 
 class ExpSeeder extends Seeder
 {
@@ -12,7 +11,6 @@ class ExpSeeder extends Seeder
      */
     public function run(): void
     {
-        Artisan::call('migrate:fresh');
         $exps = storage_path('app/private/exps_list.json');
 
         $expsData = json_decode(file_get_contents($exps), true);
